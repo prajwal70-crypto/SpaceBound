@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs>
+ <radialGradient id="ocean" cx="34%" cy="28%" r="72%">
+   <stop offset="0" stop-color="#4fa9df"/><stop offset=".42" stop-color="#1766a4"/>
+   <stop offset=".78" stop-color="#0a3765"/><stop offset="1" stop-color="#031b35"/>
+ </radialGradient>
+ <radialGradient id="atmo" cx="35%" cy="28%" r="72%">
+   <stop offset=".78" stop-color="#6bd2ff" stop-opacity="0"/>
+   <stop offset=".93" stop-color="#75d8ff" stop-opacity=".45"/>
+   <stop offset="1" stop-color="#bcecff" stop-opacity=".78"/>
+ </radialGradient>
+ <clipPath id="globe"><circle cx="256" cy="256" r="218"/></clipPath>
+ <filter id="glow"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<circle cx="256" cy="256" r="225" fill="#4fd4ff" opacity=".22" filter="url(#glow)"/>
+<circle cx="256" cy="256" r="218" fill="url(#ocean)"/>
+<g clip-path="url(#globe)">
+ <!-- stylized natural-color continental landmasses -->
+ <path d="M105 150 C126 111 155 90 190 86 L215 106 205 132 178 142 163 168 133 173Z
+          M184 185 L214 178 230 201 219 226 195 230 178 210Z
+          M244 120 L277 105 300 116 294 141 272 153 255 145Z
+          M298 162 L338 145 372 160 389 186 377 209 347 204 330 225 304 213 287 190Z
+          M353 244 L389 236 416 251 407 272 382 279 365 265Z
+          M246 270 L278 260 306 278 299 307 278 329 267 364 245 386 227 370 235 340 223 313Z
+          M147 267 L173 256 191 274 185 305 166 329 150 320 154 291Z
+          M91 360 L116 350 140 366 132 391 109 397 91 382Z"
+       fill="#5e8f45" stroke="#8eb55d" stroke-width="3"/>
+ <!-- desert/highland patches -->
+ <path d="M132 124 L177 108 194 116 173 143 143 155Z M315 170 L350 158 371 176 344 190 322 203Z
+          M260 281 L288 278 294 302 273 321 252 308Z" fill="#a98a50" opacity=".72"/>
+ <!-- polar ice -->
+ <path d="M105 91 Q256 25 407 92 L389 111 Q256 74 123 112Z" fill="#eef7fa" opacity=".9"/>
+ <path d="M111 420 Q256 475 401 418 L383 399 Q256 438 129 397Z" fill="#eaf5f7" opacity=".92"/>
+ <!-- cloud systems -->
+ <g fill="none" stroke="#f4fbff" stroke-linecap="round" opacity=".52">
+   <path d="M75 206 C135 171 176 196 222 175 S309 171 354 196 421 205 454 179" stroke-width="13"/>
+   <path d="M80 333 C135 306 175 334 225 316 S318 316 363 340 420 337 451 315" stroke-width="10"/>
+   <path d="M235 91 C278 116 315 102 347 122" stroke-width="8"/>
+ </g>
+ <circle cx="330" cy="220" r="2.2" fill="#fff"/><circle cx="200" cy="245" r="1.8" fill="#fff"/>
+</g>
+<circle cx="256" cy="256" r="218" fill="url(#atmo)"/>
+<circle cx="256" cy="256" r="218" fill="none" stroke="#8ee4ff" stroke-width="5" opacity=".7"/>
+</svg>
